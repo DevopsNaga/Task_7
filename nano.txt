@@ -1,0 +1,32 @@
+#!/bin/bash
+
+# A simple bash script to demonstrate basic commands
+
+# Print a greeting
+echo "Hello, welcome to Bash scripting!"
+
+# Ask for user's name and print a personalized greeting
+echo -n "Enter your name: "
+read name
+echo "Hello, $name! Nice to meet you."
+
+# Show the current date and time
+echo "The current date and time is: $(date)"
+
+# Display system uptime
+echo "System uptime is: $(uptime -p)"
+
+# List files in the current directory
+echo "Here are the files in the current directory:"
+ls -l
+
+# Create a new file
+echo "Creating a new file called sample_file.txt"
+touch sample_file.txt
+
+# Check if the file was created
+if [ -f sample_file.txt ]; then
+    echo "File sample_file.txt was successfully created."
+else
+    echo "Failed to create sample_file.txt."
+fi
